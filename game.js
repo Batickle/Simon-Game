@@ -4,16 +4,17 @@ var buttonColors = ["red", "blue", "green", "yellow"];
 var level = 0;
 var started = false;
 
-$(document).on("keydown", function() {
+$(document).on("keydown", init);
+$("h1").on("click",init);
 
-
+function init(){
   if (!started) {
     $("#level-title").html("Level " + level);
     nextSequence();
     started = true;
   }
 
-});
+}
 
 function nextSequence() {
   userClickPattern=[];
