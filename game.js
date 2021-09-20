@@ -3,9 +3,9 @@ var userClickPattern = [];
 var buttonColors = ["red", "blue", "green", "yellow"];
 var level = 0;
 var started = false;
-
-$(document).on("keydown", init);
 $("h1").on("click",init);
+$(document).on("keydown", init);
+
 
 function init(){
   if (!started) {
